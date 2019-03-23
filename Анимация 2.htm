@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> вадратокруг</title>
+    <style type="text/css">
+
+@keyframes turning {
+ 0% {
+    border-radius: 0 0 0 0;
+    transform: rotate(0deg);  }
+25% {
+    border-radius: 50% 0 0 0;
+    transform: rotate(45deg); }
+50% {
+    border-radius: 50% 50% 0 0;
+    transform: rotate(90deg); }
+75% {
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(135deg); }
+100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(180deg); }}
+	div{
+	   width: 100px;
+	   height: 100px;
+	   background-color:#14DEE6;
+       border: 1px solid black;
+	   margin: 50px;
+	   position: relative;
+ 	   animation: turning 2s ease-out 1s infinite alternate; }
+	div:hover {
+	animation-play-state: paused; }
+	</style>
+	<body>
+		<left><div></div></left>	<center><div></div></center>	 <left><div></div></left> <center><div></div></center> <left><div></div></left> 
+	</body>
+	</html>
